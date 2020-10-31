@@ -43,7 +43,7 @@ api.onText(/\/sentiments/, function(msg, match) {
     api.onReplyToMessage(chatId, messageId, function (message) {
     //call a function to get sentiments here...
     var sentival = sentiment.analyze(message.text);
-    api.sendMessage(fromId,"So sentiments for your text are, Score:" + sentival.score +" Comparative:"+sentival.comparative).then((res)=>{
+    api.sendMessage(fromId,"So sentiments for your text are, Score:" + sentival.score +" Comparative:").then((res)=>{
         console.log("response Succssful",res)
     }).catch((e)=>{
         console.log("Error in sending response",e)
