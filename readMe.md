@@ -4,4 +4,5 @@
 
 ### Steps
     1. Clone
-    2. node app.js
+    2. change token in app.js or add env file wih bot TOKEN
+    3. node app.js
