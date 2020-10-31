@@ -1,8 +1,8 @@
 var telegramBot = require('node-telegram-bot-api');
 var Sentiment = require('sentiment');
+require('dotenv').config()
 var sentiment=new Sentiment()
 var token =process.env.TOKEN;
-
 try{
 var api = new telegramBot(token, {polling: true});
 }catch(e){
